@@ -1,0 +1,407 @@
+/*
+/////////////////////////////
+below 1400px
+////////////////////////////
+*/
+
+@media (max-width: 187.5em) {
+
+
+  .item:is(:nth-child(5))::after {
+    display: none;
+    visibility: hidden;
+  }
+
+  /* 
+  nav {
+    pointer-events: auto;
+  } */
+
+}
+
+/*
+/////////////////////////////
+below 1100px
+////////////////////////////
+*/
+
+@media (max-width: 72.5em) {
+
+  html {
+    font-size: 56.25%;
+  }
+
+  /* for home page (mobile navigation)*/
+  .btn-mobile-nav,
+  .nav-block {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+
+
+
+
+  .register {
+    display: none;
+  }
+
+  .nav-bar {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+    transition: all 0.3s ease-out;
+
+    /* Hide navigation */
+    /* we can't use this because it llows no transition/animation */
+    /* display: none; */
+
+
+    /*1) hide its visibility */
+    opacity: 0;
+
+    /* 2) make it unaccetable to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) hide it from screen readers */
+    visibility: hidden;
+  }
+
+
+
+  .nav-open .nav-bar {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  /* displays the close icon once the nav-open class is active */
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  /*closesthe menu icon once the nav-open class is active */
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .item:link,
+  .item:visited {
+    font-size: 3rem;
+  }
+
+  .item:not(:last-child)::after {
+    display: none;
+  }
+
+
+
+
+
+}
+
+/* 
+/////////////////////////////
+below 1000px
+////////////////////////////
+*/
+
+@media (max-width: 64.75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/*
+/////////////////////////////
+below 915px
+////////////////////////////
+*/
+
+@media (max-width: 57.375em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+
+/*
+/////////////////////////////         
+below 700px
+////////////////////////////
+*/
+
+@media (max-width: 50.9375em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+
+
+
+/*
+/////////////////////////////         
+below 615px
+////////////////////////////
+*/
+@media (max-width: 43.33em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .buy-sell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .buy-flex {
+    align-items: start;
+    padding: 4.2rem 0 0 0;
+    justify-content: center;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .grid--3 {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+
+  .t-text {
+    font-size: 3.6rem;
+  }
+
+  .melsio-icon {
+
+    height: 3.6rem;
+    width: 3.6rem;
+  }
+
+  .g-fqa {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.4rem;
+  }
+
+  .block {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .normal {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+/*
+/////////////////////////////         
+below 500px
+////*/
+
+@media (max-width: 31.25rem) {
+  .test {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+
+
+  .dan {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .sam {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .t-text {
+    font-size: 3rem;
+  }
+
+  .melsio-icon {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+/*
+/////////////////////////////         
+below 400px
+////*/
+
+@media (max-width: 27.75em) {
+  .t-text {
+    font-size: 2.4rem;
+  }
+
+  .melsio-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  .melsio {
+    font-size: 7.4rem;
+  }
+
+  .section-flex {
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+
+  .price-link {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .inner-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .img-svg,
+  .swap-svg {
+    height: 80%;
+    width: auto;
+  }
+
+  .buy-flex {
+    padding-top: 1.2rem;
+    gap: 1.6rem;
+  }
+
+  .mar-bt {
+    margin-bottom: 0.8rem;
+  }
+
+  .mar {
+    margin-top: 1.6rem;
+  }
+
+  .grid-card {
+    pointer-events: none;
+  }
+
+  .buy-link:hover {
+    transform: translateY(0rem);
+  }
+
+}
+
+@media (max-width: 23.625rem) {
+  html {
+    font-size: 37.5%;
+  }
+
+  .t-text {
+    font-size: 2rem;
+  }
+
+  .melsio-icon {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .melsio {
+    font-size: 6.2rem;
+  }
+}
+
+/*
+/////////////////////////////         
+below 379px
+////*/
+
+@media (max-width: 23.6875em) {
+  .t-text {
+    font-size: 1.8rem;
+  }
+
+  .melsio-icon {
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+
+  .melsio {
+    font-size: 5.8rem;
+  }
+
+  .section-flex {
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+
+  .price-link {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .inner-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .img-svg,
+  .swap-svg {
+    height: 80%;
+    width: auto;
+  }
+
+  .buy-flex {
+    padding-top: 1.2rem;
+    gap: 1.6rem;
+  }
+
+  .mar-bt {
+    margin-bottom: 0.8rem;
+  }
+
+  .mar {
+    margin-top: 1.6rem;
+  }
+
+  .grid-card {
+    pointer-events: none;
+  }
+
+  .buy-link:hover {
+    transform: translateY(0rem);
+  }
+}

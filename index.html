@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Always include this line of code !!! it help when media qeuries are needed  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- HTML Meta Tags -->
+  <title>Melsio - Buy, Sell & Swap Crypto</title>
+  <meta name="description" content="Join Melsio, the fastest-growing crypto marketplace.">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://melsio.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Melsio - Buy, Sell & Swap Crypto">
+  <meta property="og:description" content="Join Melsio, the fastest-growing crypto marketplace.">
+  <meta property="og:image" content="https://melsio.netlify.app/melsio-thumbnail.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="melsio.netlify.app">
+  <meta property="twitter:url" content="https://melsio.netlify.app/">
+  <meta name="twitter:title" content="Melsio - Buy, Sell & Swap Crypto">
+  <meta name="twitter:description" content="Join Melsio, the fastest-growing crypto marketplace.">
+  <meta name="twitter:image" content="https://melsio.netlify.app/melsio-thumbnail.png">
+
+  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+
+
+  <!-- css styles -->
+  <link rel="stylesheet" href="css/general.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/index-quaries.css" media="print" onload="this.media='all'">
+
+  <!-- font families -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
+
+  <title>Welcome to MELSIO</title>
+</head>
+
+<body>
+
+
+  <header>
+
+    <a href="#"> <img class="logo" src="img/logo/logo-trans.png" alt="Melsio Logo"></a>
+
+    <nav class="nav-bar">
+
+      <a href="index.html" class="item">Home</a>
+      <a href="#buy" class="item">Buy/Sell Crypto</a>
+      <a href="html/learn-crypto.html" target="_blank" class="item" rel="noopener">Learn Crypto</a>
+      <a href="#swap" class="item">Swap <span class="item span-item">Crypto</span></a>
+      <a href="#about" class="item">About Us</a>
+      <div class="nav-block">
+        <div class="nav-div">
+          <a href="html/sign-in.html" class="nav-div--1">Sign In</a>
+          <a href="html/sign-up.html" class="nav-div--2">Sign Up</a>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="register">
+      <li><a href="html/sign-in.html" class="main-cta nav-cta">Sign In </a></li>
+    </ul>
+
+    <button class="btn-mobile-nav"><ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon><ion-icon
+        class="icon-mobile-nav" name="close-outline"></ion-icon></button>
+  </header>
+
+
+  <main>
+
+
+
+    <section class="section-hero nav-open">
+      <div class="melsio-flex">
+        <div class="m-t">
+          <h1 class="melsio">MELSIO</h1>
+          <p class="melsio-text">"Your go to place for anything Crypto...."</p>
+        </div>
+        <ion-icon name="arrow-down-outline" class="melsio-icon"></ion-icon>
+        <div class="t-b-g">
+          <h2 class="t-text">Trade Where Banks Won't Dare</h2>
+          <p class="b-text">The future is crypto, Crypto is the future<br>Buy, Sell and learn crypto seamlessly</p>
+        </div>
+        <a href="#" class="a-text">Get Started Now</a>
+      </div>
+    </section>
+
+    <section class="section-crypto-prices  container" id="section-crypto-prices">
+      <div class="section-flex ">
+        <h2 class="secondary-heading">Cryptocurrency Prices</h2>
+        <a href="#" class="price-link">View advanced mode </a>
+      </div>
+      <div class="grid grid--3">
+        <div class="c-t">
+          <p class="c-text">Trending cryptos</p>
+          <span class="grid-t">
+            <span class="flex-cc">
+              <img src="https://coin-images.coingecko.com/coins/images/1/large/bitcoin.png?1696501400"
+                alt="bitcoin logo" class="price-logo">
+              <p class="cc-text bitcoin-name">Bitcoin</p>
+            </span>
+            <p class="cc-text bitcoin-price"></p>
+            <span class="cc-text bitcoin-change"></span>
+
+            <span class="flex-cc">
+              <img src=" https://coin-images.coingecko.com/coins/images/4128/large/solana.png?1718769756"
+                alt="solana logo" class="price-logo">
+              <p class="cc-text solana-name">Solana</p>
+            </span>
+            <p class="cc-text solana-price">$--</p>
+            <span class="cc-text solana-change">--%</span>
+
+
+            <span class="flex-cc">
+              <img src=" https://coin-images.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png?1696501442"
+                alt="xrp logo" class="price-logo">
+              <p class="cc-text xrp-name">xrp</p>
+            </span>
+            <p class="cc-text ripple-price">$--</p>
+            <span class="cc-text ripple-change">--%</span>
+          </span>
+        </div>
+
+        <div class="c-t">
+          <p class="c-text">Top movers</p>
+          <div class="grid-t">
+            <div class="flex-cc">
+              <img src="https://coin-images.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1696501970"
+                alt="pepe-token logo" class="price-logo">
+              <p class="cc-text binancecoin">BNB</p>
+            </div>
+            <p class="cc-text binancecoin-price">$--</p>
+            <span class="cc-text binancecoin-change">--%</span>
+
+            <div class="flex-cc">
+              <img src="https://coin-images.coingecko.com/coins/images/5/large/dogecoin.png?1696501409 "
+                alt="dogecoin logo" class="price-logo">
+              <p class="cc-text">dogecoin</p>
+            </div>
+            <p class="cc-text dogecoin-price">$--</p>
+            <span class="cc-text dogecoin-change">--%</span>
+
+
+            <div class="flex-cc">
+              <img src="https://coin-images.coingecko.com/coins/images/12171/large/polkadot.png?1696512008"
+                alt="xrp logo" class="price-logo">
+              <p class="cc-text">polkadot</p>
+            </div>
+            <p class="cc-text polkadot-price">$--</p>
+            <span class="cc-text polkadot-change">--%</span>
+
+          </div>
+
+        </div>
+
+        <div class="c-t c-t--3">
+          <p class="c-text">New on Melsio</p>
+          <div class="grid-t">
+            <div class="flex-cc">
+              <img src="https://coin-images.coingecko.com/coins/images/33566/large/dogwifhat.jpg?1702499428"
+                alt="dogwifhat logo" class="price-logo">
+              <p class="cc-text">WIF</p>
+            </div>
+            <p class="cc-text dogwifcoin-price">$--</p>
+            <span class="cc-text dogwifcoin-change">--%</span>
+
+            <div class="flex-cc">
+              <img src="https://coin-images.coingecko.com/coins/images/13928/large/PSigc4ie_400x400.jpg?1696513668"
+                alt="Raydium logo" class="price-logo">
+              <p class="cc-text">Raydium</p>
+            </div>
+            <p class="cc-text raydium-price">$--</p>
+            <span class="cc-text raydium-change">--%</span>
+
+
+            <div class="flex-cc">
+              <img
+                src="https://coin-images.coingecko.com/coins/images/4463/large/WeChat_Image_20220118095654.png?1696505053"
+                alt="okb logo" class="price-logo">
+              <p class="cc-text">OKB</p>
+            </div>
+            <p class="cc-text okb-price">$--</p>
+            <span class="cc-text okb-change">--%</span>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section-buy-sell container">
+      <div class="grid buy-sell">
+        <div class="buy inner-grid" id="buy">
+          <img src="img/illustrations/cart.svg " alt="An illustrations showing bitcoin being bought by users"
+            class="img-svg ">
+          <div class="buy-flex">
+            <h3 class="teritary-heading mar-bt block">Looking to invest in the future?</h3>
+            <p class="buy-text block dan">Quickly convert your crypto into cash or stablecoins without delays. Enjoy a
+              smooth, reliable, and transparent selling
+              experience, all in one place.</p>
+            <p class="buy-text normal sam">Find the best cryptocurrency deals at unbeatable prices. Secure your assets
+              now
+            </p>
+            <a href="#" class="buy-link">Buy Now</a>
+          </div>
+        </div>
+
+        <div class=" sell inner-grid">
+          <img src="img/illustrations/men.svg" alt="An illustrations showing crypto being sold by users"
+            class="img-svg">
+          <div class="buy-flex">
+            <h3 class="teritary-heading mar-bt  block">Looking to cash in on your gains?</h3>
+            <p class="buy-text block dan">Effortlessly purchase your favorite cryptocurrencies with ease. No complicated
+              steps, no hidden fees—just a seamless,
+              secure, and fast way to grow your portfolio.</p>
+            <p class="buy-text normal sam">Easily sell your cryptocurrency at competitive rates with fast transactions.
+            </p>
+            <a href="#" class="buy-link">Sell Now</a>
+          </div>
+        </div>
+
+
+        <div class="swap inner-grid " id="swap">
+          <img src="img/illustrations/swap.svg"
+            alt="An illustrations showing crypto being swaped to other token by users by users" class="swap-svg">
+          <div class="buy-flex">
+            <div>
+              <h3 class="teritary-heading mar-bt ">Looking to diversify your portfolio?</h3>
+              <p class="buy-text dan">
+                Seamlessly convert your Layer 1 tokens to Layer 2 or 3 directly, without relying on external DApps. It's
+                hassle-free and
+                convenient!"</p>
+              <p class="buy-text mar sam">
+                Seamlessly convert your Layer 1 tokens to Layer 2 or 3 directly.It's hassle free!!!</p>
+            </div>
+            <a href="#" class="buy-link">Convert Now</a>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+    </section>
+
+    <section class="section-features container">
+      <div class="sec-flex">
+        <h2 class="secondary-heading ">Why Choose Us?</h2>
+        <p class="teritary-heading sec-text">At Melsio we are commited to secure transactions, low fees, and an
+          easy-to-use platform designed for
+          everyone.</p>
+      </div>
+
+
+      <div class="grid grid--3">
+        <div class="grid-card">
+          <div class="card-flex">
+            <ion-icon name="shield-checkmark-outline" class="card-icon"></ion-icon>
+            <h3 class="teritary-heading">Security</h3>
+          </div>
+          <p class="text card-text">Military-grade encryption <br>and 2FA to protect your <br> data and transactions.
+          </p>
+          <a href="#" class="card-link">Learn More &rArr;</a>
+        </div>
+        <div class="grid-card">
+          <div class="card-flex">
+            <ion-icon name="wallet-outline" class="card-icon"></ion-icon>
+            <h3 class="teritary-heading">Low Fees</h3>
+          </div>
+          <p class="text card-text">Competitive rates with no <br> hidden charges, helping <br> you save more money</p>
+          <a href="#" class="card-link">See Our Rates</a>
+        </div>
+        <div class="grid-card c-t--3">
+          <div class="card-flex">
+            <ion-icon name="phone-portrait-outline" class="card-icon"></ion-icon>
+            <h3 class="teritary-heading">Easy to use</h3>
+          </div>
+          <p class="text card-text">Simple, intuitive design <br>for a smooth and <br> effortless user experience..</p>
+          <a href="#" class="card-link">Experience Simplicity</a>
+        </div>
+
+
+
+
+
+      </div>
+    </section>
+
+
+    <section class="section-testimonials container">
+
+      <p class="secondary-heading p-tes">What top traders are saying about MELSIO</p>
+
+      <div class="grid grid--2 test">
+
+        <figure class="testimonials">
+          <img src="img/top traders/alex.jpg" alt="A photo of Alex" class="testimonials-img">
+          <blockquote class="b-q">Melsio made crypto trading incredibly easy! The platform is intuitive, and the low
+            fees
+            mean I get to keep more of my earnings. Plus, the security features like 2FA give me peace of mind knowing
+            my
+            assets are safe.</blockquote>
+          <p class="testimonials-text">&mdash;Alex J</p>
+        </figure>
+
+
+        <figure class="testimonials">
+          <img src="img/top traders/emma.jpg" alt="A photo of Emma" class="testimonials-img">
+          <blockquote class="b-q">Fast, secure, and incredibly easy to use! Melsio has become my favorite platform for
+            trading crypto. The low fees are a
+            huge bonus, and the sleek design makes everything straightforward. I can’t imagine using anything else.
+          </blockquote>
+          <p class="testimonials-text">&mdash;Emma L</p>
+        </figure>
+
+
+        <figure class="testimonials">
+          <img src="img/top traders/daniel.jpg" alt="A photo of Daniel" class="testimonials-img">
+          <blockquote class="b-q">I’ve tried other platforms, but Melsio stands out. The learning resources are
+            top-notch,
+            and the ability to buy, sell, and swap all in one place makes it so convenient. Highly recommended for
+            anyone,
+            whether you're new or experienced.</blockquote>
+          <p class="testimonials-text">&mdash;Daniel K</p>
+        </figure>
+
+
+        <figure class="testimonials">
+          <img src="img/top traders/samantha.jpg" alt="A photo of Samantha" class="testimonials-img">
+          <blockquote class="b-q">As a beginner, I was nervous about getting into cryptocurrency, but Melsio's
+            user-friendly design and detailed resources helped me every step of the way. Swapping my first crypto was so
+            smooth, and I’ve been using it ever since!</blockquote>
+          <p class="testimonials-text">&mdash;Samantha R</p>
+        </figure>
+
+
+
+
+      </div>
+    </section>
+
+    <section class="section-fqa container">
+      <div class="grid grid--2 g-fqa">
+        <div class="fqa-flex">
+          <h1 class="fqa">
+            Frequently <br> asked questions
+          </h1>
+        </div>
+
+        <div class="accordian">
+          <!-- Question 1 -->
+          <div class="fqa-items">
+            <div class="text fqa-p">
+              <p>How do i create an account?</p>
+              <ion-icon name="chevron-down-outline" class="fqa--icon"></ion-icon>
+            </div>
+            <div class="fqa-answer">
+              <p class="fqa-text">Click "Sign Up," enter your email, username, and password. Verify your email, complete
+                any extra steps, and you're all
+                set to use your account!
+              </p>
+            </div>
+          </div>
+          <!-- Question 2 -->
+          <div class="fqa-items">
+            <div class="text fqa-p">
+              <p>What are the fees?</p>
+              <ion-icon name="chevron-down-outline" class="fqa--icon"></ion-icon>
+            </div>
+            <div class="fqa-answer">
+              <p>
+                Fees may vary depending on the service or transaction. Please check our pricing page or specific service
+                details for
+                accurate information on fees.</p>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="fqa-items">
+            <div class="text fqa-p">
+              <p>Is my data secure?</p>
+              <ion-icon name="chevron-down-outline" class="fqa--icon"></ion-icon>
+            </div>
+            <div class="fqa-answer">
+              <p>
+                Yes, your data is fully secure. We use military-grade AES 256-bit encryption to protect your
+                information, ensuring it's
+                safe from unauthorized access.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+    <section class="section-about-us container" id="about">
+      <h2 class="secondary-heading our">Our Purpose And Ambition</h2>
+
+      <div class="grid-container">
+        <div class="mission-card">
+          <div class="m-card">
+            <h3 class="teritary-heading m">Mission Statement</h3>
+            <p class="m-text text">At Melsio, our mission is to empower individuals and communities by providing a
+              secure,
+              user-friendly platform to buy,
+              sell, swap, and learn about cryptocurrency. We aim to simplify the crypto journey, foster financial
+              independence, and
+              build trust through transparency, innovation, and education.</p>
+            <div class="m-list">
+              <h2 class="text" style="color: #555;">We Are</h2>
+              <p class="c-r-l">Certified.</p>
+              <p class="c-r-l">Regulated.</p>
+              <p class="c-r-l">Licensed.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline normal">
+          <div class="content">
+            <h2>Established in 2025</h2>
+            <p>Redefining Global Crypto Engagement.</p>
+          </div>
+        </div>
+
+        <div class="mantra normal">
+          <div class="mantra-card">
+            <p class="teritary-heading ">Our Mantra</p>
+            <p class="text" style="color: #fff;">Empowering Financial Freedom Through Innovation And Trust</p>
+          </div>
+        </div>
+
+        <div class="we normal">
+          <div class="we-card">
+            <p class="we-p">We <3 Crypto</p>
+                <p class="we-text">Crypto isn't just a currency it's a revolution and "MELSIO" is leading the way</p>
+          </div>
+        </div>
+
+
+        <div class="vision">
+          <div class="vision-card">
+            <h3 class="teritary-heading m">Vision Statement</h3>
+            <p class="text">Our vision is to become the go-to platform for cryptocurrency enthusiasts worldwide, where
+              everyone can confidently explore and leverage the power of digital assets to shape their financial future.
+              We aspire
+              to lead the way in creating a decentralized, inclusive, and sustainable crypto ecosystem.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-cta container normal">
+      <div class="grid grid--2 cta">
+
+        <div class="text-con">
+          <div class="flex-1">
+            <h2 class="secondary-heading s">Stay Up To Date</h2>
+            <ul class="list-flex">
+              <li class="list-item "><ion-icon name="checkmark-outline"></ion-icon> <span>On crypto news</span></li>
+              <li class="list-item "><ion-icon name="checkmark-outline"></ion-icon> <span>On various cryptocurrency
+                  prices</span></li>
+            </ul>
+          </div>
+
+          <div class="flex-2">
+            <input type="email" placeholder="Email address" name="email" id="email" required>
+
+            <!-- change this to button -->
+            <a href="#" class="a-link">Subscribe</a>
+          </div>
+        </div>
+
+        <div class="img-con">
+          <img src="img/illustrations/suscribe.svg" alt="suscribe to our newsletter" class="img-svg">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- footer for bigger screens -->
+  <footer class="normal">
+    <div class="grid-f">
+      <div class="grid-item--1">
+        <p class="mel">MELSIO</p>
+        <a href="#" class="a-text c">Start Trading Now</a>
+        <p class="copyright">Copyright &copy; <Span class="year">2027</Span> by MELSIO, inc. All rights reserved</p>
+      </div>
+
+      <div class="grid-item--2">
+        <p class="footer-heading">Account</p>
+        <ul class="footer-nav">
+          <li><a href="#" class="footer-link">Create account</a></li>
+          <li><a href="#" class="footer-link">Sign in</a></li>
+          <li><a href="#" class="footer-link">Ios app</a></li>
+          <li><a href="#" class="footer-link">Android app</a></li>
+          <li><a href="#" class="footer-link">Desktop app</a></li>
+        </ul>
+      </div>
+      <div class="grid-item--2">
+        <p class="footer-heading">Resources
+        <ul class="footer-nav">
+          <li><a href="#" class="footer-link">Prices</a></li>
+          <li><a href="#" class="footer-link">Price converter</a></li>
+          <li><a href="#" class="footer-link">Melsio blog</a></li>
+          <li><a href="#" class="footer-link">Security</a></li>
+          <li><a href="#" class="footer-link">About</a></li>
+        </ul>
+      </div>
+      <div class="grid-item--2">
+        <p class="footer-heading">Company</p>
+        <ul class="footer-nav">
+          <li><a href="#" class="footer-link">About us</a></li>
+          <li><a href="#" class="footer-link">Privacy & terms</a></li>
+          <li><a href="#" class="footer-link">Help center</a></li>
+          <li><a href="#" class="footer-link">Legal aggrement</a></li>
+          <li><a href="#" class="footer-link">Support center</a></li>
+        </ul>
+      </div>
+      <div class="grid-item--2">
+        <p class="footer-heading">Partners</p>
+        <ul class="footer-nav">
+          <li><a href="https://www.samsung.com" target="_blank" rel="noopener" class="footer-link">Samsung</a></li>
+          <li><a href="https://www.openai.com" target="_blank" rel="noopener" class="footer-link">Open Ai</a></li>
+          <li><a href="https://www.lunar.build" target="_blank" rel="noopener" class="footer-link">Lunar</a></li>
+          <li><a href="https://www.bitget.com" target="_blank" rel="noopener" class="footer-link">Bitget</a></li>
+          <li><a href="https://jup.ag" target="_blank" rel="noopener" class="footer-link">Jupiter</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="flex-f">
+      <div class="social-media-flex">
+        <a href="#"><ion-icon name="logo-twitter" class="s-m"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-youtube" class="s-m"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram" class="s-m"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-facebook" class="s-m"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-discord" class="s-m"></ion-icon></a>
+      </div>
+
+
+      <div class="dowload-flex">
+        <a href="#"><img src="img/illustrations/google-play.svg" alt="Download on google-play-store" class="d-img"></a>
+        <a href="#"><img src="img/illustrations/apple-app-store.svg" alt="Download on apple-app-store"
+            class="d-img"></a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- 2nd footer -->
+  <footer class="media--footer block">
+    <div class="div--1">
+      <p class="sio">MELSIO</p>
+      <div class="div--1-flex">
+        <p class="p--1">Stay up to date</p>
+        <input type="email" placeholder="Email address" name="email" id="cta--email" required>
+        <button class="z-link">Subscribe</button>
+      </div>
+    </div>
+
+    <div class="div--2">
+
+      <div class="div--2-flex">
+        <div class="f--heading">
+          <p class="foot--er">Resources</p>
+          <ion-icon name="chevron-down-outline" class="f--icon"></ion-icon>
+        </div>
+        <div class="f--subheading">
+          <ul class="footer-nav">
+            <li><a href="#" class="footer-link">Prices</a></li>
+            <li><a href="#" class="footer-link">Price converter</a></li>
+            <li><a href="#" class="footer-link">Melsio blog</a></li>
+            <li><a href="#" class="footer-link">Security</a></li>
+            <li><a href="#" class="footer-link">About</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="div--2-flex">
+        <div class="f--heading">
+          <p class="foot--er">Company</p>
+          <ion-icon name="chevron-down-outline" class="f--icon"></ion-icon>
+        </div>
+        <div class="f--subheading">
+          <ul class="footer-nav">
+            <li><a href="#" class="footer-link">About us</a></li>
+            <li><a href="#" class="footer-link">Privacy & terms</a></li>
+            <li><a href="#" class="footer-link">Help center</a></li>
+            <li><a href="#" class="footer-link">Legal aggrement</a></li>
+            <li><a href="#" class="footer-link">Support center</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="div--2-flex">
+        <div class="f--heading">
+          <p class="foot--er">Partners</p>
+          <ion-icon name="chevron-down-outline" class="f--icon"></ion-icon>
+        </div>
+        <div class="f--subheading">
+          <ul class="footer-nav">
+            <li><a href="https://www.samsung.com" target="_blank" rel="noopener" class="footer-link">Samsung</a></li>
+            <li><a href="https://www.openai.com" target="_blank" rel="noopener" class="footer-link">Open Ai</a></li>
+            <li><a href="https://www.lunar.build" target="_blank" rel="noopener" class="footer-link">Lunar</a></li>
+            <li><a href="https://www.bitget.com" target="_blank" rel="noopener" class="footer-link">Bitget</a></li>
+            <li><a href="https://jup.ag" target="_blank" rel="noopener" class="footer-link">Jupiter</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="div--2-flex">
+        <div class="f--heading">
+          <p class="foot--er">Account</p>
+          <ion-icon name="chevron-down-outline" class="f--icon"></ion-icon>
+        </div>
+        <div class="f--subheading">
+          <ul class="footer-nav">
+            <li><a href="#" class="footer-link">Create account</a></li>
+            <li><a href="#" class="footer-link">Sign in</a></li>
+            <li><a href="#" class="footer-link">Ios app</a></li>
+            <li><a href="#" class="footer-link">Android app</a></li>
+            <li><a href="#" class="footer-link">Desktop app</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+
+    <div class="div--3">
+      <a href="#"><ion-icon name="logo-twitter" class="s-h"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-youtube" class="s-h"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-instagram" class="s-h"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-facebook" class="s-h"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-discord" class="s-h"></ion-icon></a>
+    </div>
+
+    <div class="div--4">
+      <a href="#"><img src="img/illustrations/google-play.svg" alt="Download on google-play-store" class="c-img"></a>
+      <a href="#"><img src="img/illustrations/apple-app-store.svg" alt="Download on apple-app-store" class="c-img"></a>
+    </div>
+
+    <div class="div--5">
+      <p class="copy--r">Copyright &copy; <Span class="year"></Span> by MELSIO, inc. All rights reserved</p>
+    </div>
+
+  </footer>
+
+
+
+  <!-- javscript links -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+  <script defer src="js/script.js"></script>
+</body>
+
+</html>

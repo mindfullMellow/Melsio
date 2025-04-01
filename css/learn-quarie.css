@@ -1,0 +1,454 @@
+/*
+/////////////////////////////
+below 1400px
+////////////////////////////
+*/
+
+@media (max-width: 187.5em) {
+
+
+  .item:is(:nth-child(5))::after {
+    display: none;
+    visibility: hidden;
+  }
+
+  .advance,
+  .youtube-grid {
+    padding-left: 0vw;
+  }
+
+  .block--s {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .t-sam {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+}
+
+/*
+/////////////////////////////
+below 1100px
+////////////////////////////
+*/
+
+@media (max-width: 72.5em) {
+
+  /* html {
+    font-size: 56.25%;
+  } */
+
+  /* for home page (mobile navigation)*/
+  .btn-mobile-nav,
+  .nav-block {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+
+
+
+
+  .register {
+    display: none;
+  }
+
+  .nav-bar {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+    transition: all 0.3s ease-out;
+
+    /* Hide navigation */
+    /* we can't use this because it llows no transition/animation */
+    /* display: none; */
+
+
+    /*1) hide its visibility */
+    opacity: 0;
+
+    /* 2) make it unaccetable to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) hide it from screen readers */
+    visibility: hidden;
+  }
+
+
+
+  .nav-open .nav-bar {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  /* displays the close icon once the nav-open class is active */
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  /*closesthe menu icon once the nav-open class is active */
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .item:link,
+  .item:visited {
+    font-size: 3rem;
+  }
+
+  .item:not(:last-child)::after {
+    display: none;
+  }
+
+  .advance,
+  .youtube-grid {
+    padding-left: 0vw;
+  }
+}
+
+/*
+/////////////////////////////
+below 1050px
+////////////////////////////
+*/
+
+@media (max-width: 65.625em) {
+  .a {
+    font-size: 3.6rem;
+  }
+
+  .advance,
+  .youtube-grid {
+    display: flex;
+    overflow-x: auto;
+    /* Enables horizontal scrolling */
+    gap: 1rem;
+    /* Spacing between cards */
+
+
+    scroll-snap-type: x mandatory;
+    /* Enables smooth snapping */
+
+    -webkit-overflow-scrolling: touch;
+    /* Improves scrolling on mobile */
+
+    padding-left: 19vw;
+    /* Add space for the first item */
+
+  }
+
+  .advance--1,
+  .youtube-grid div {
+    flex: 0 0 50%;
+    /* Each card takes 50% of the screen width */
+
+    scroll-snap-align: start;
+    /* Snaps each card in place */
+  }
+
+  .advance::-webkit-scrollbar,
+  .youtube-grid::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+  }
+
+  .advance--1:hover {
+    transform: translateY(0rem);
+  }
+
+
+}
+
+/*
+/////////////////////////////
+below 965px
+////////////////////////////
+*/
+@media(max-width: 60.3125em) {
+  .learn-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .g--1 h1,
+  .g--1 p {
+    text-align: center;
+  }
+
+  .g--flex,
+  .learn-img {
+    justify-content: center;
+  }
+
+  .grid-img {
+    height: 50%;
+    width: auto;
+    justify-self: center;
+  }
+
+  .intro-grid {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+
+  .div--1,
+  .div--2 {
+    align-self: center;
+  }
+
+  .div--3 {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .normal {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .block--s {
+    display: block;
+    visibility: visible;
+    pointer-events: auto;
+    padding-top: 4.8rem;
+  }
+
+
+}
+
+/*
+/////////////////////////////
+below 898px
+////////////////////////////
+*/
+
+@media (max-width: 56.125em) {
+  .basics--1 img {
+    display: none;
+  }
+
+  .basics--1 h1,
+  .basics--1 h3,
+  .basics--1 p {
+    align-self: center;
+  }
+
+  .basics--1 p {
+    line-height: 1.5;
+  }
+
+  .g-fqa {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .earn-items img {
+    border-radius: 0%;
+  }
+
+}
+
+/*
+/////////////////////////////
+below 850px
+////////////////////////////
+*/
+
+@media (max-width: 53.125em) {
+
+  html {
+    font-size: 50%;
+  }
+
+
+}
+
+/*
+/////////////////////////////
+below 687px
+////////////////////////////
+*/
+@media (max-width: 42.9375em) {
+  .table-text {
+    font-size: 1.4rem;
+    letter-spacing: 0.3px;
+  }
+
+  .advance-content h3 {
+    font-size: 2.0rem;
+  }
+
+  .tt-ttt {
+    font-size: 1.4rem;
+  }
+}
+
+/*
+/////////////////////////////
+below 630px
+////////////////////////////
+*/
+@media (max-width: 39.375em) {
+
+  .n--sam {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .t-sam {
+    display: block;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
+/*
+/////////////////////////////
+below 596px
+////////////////////////////
+*/
+
+@media (max-width: 37.25em) {
+  .youtube-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding-left: 0rem;
+    flex: 1;
+    align-items: normal;
+  }
+
+  .fqa {
+    font-size: 3.6rem;
+  }
+
+  .advance-topics-section {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .earn-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3.2rem 3rem;
+
+  }
+
+  .earn-items img {
+    height: 50%;
+    width: 50%;
+  }
+
+  .g-fqa {
+    padding: 0 0 4.8rem 0;
+  }
+
+
+  .flex--text {
+    align-items: center;
+    justify-content: center;
+  }
+
+  thead th:nth-child(3),
+  tbody th:nth-child(3),
+  tbody td:nth-child(1) {
+    text-align: center;
+  }
+
+  thead th:nth-child(4),
+  tbody th:nth-child(4) {
+    text-align: center;
+  }
+
+}
+
+/*
+/////////////////////////////
+below 500px
+////////////////////////////
+*/
+@media (max-width: 31.25em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+
+/*
+/////////////////////////////
+below 445px
+////////////////////////////
+*/
+@media (max-width: 27.8125em) {
+  .fqa {
+    font-size: 3.0rem;
+  }
+
+  .editor img {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .learn-text {
+    font-size: 1.8rem;
+  }
+
+  .a {
+    font-size: 3.0rem;
+  }
+
+  .secondary-heading {
+    font-size: 2.8rem;
+  }
+}
+
+/*
+/////////////////////////////
+below 375px
+////////////////////////////
+*/
+@media (max-width: 23.4375em) {
+  html {
+    font-size: 37.5%;
+  }
+}
+
+/*
+/////////////////////////////
+below 310px
+////////////////////////////
+*/
+@media (max-width: 19.375em) {
+
+  .g--flex {
+    flex-direction: column;
+  }
+
+  .i-f {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
