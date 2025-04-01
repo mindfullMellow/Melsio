@@ -12,7 +12,8 @@ Melsio is a cryptocurrency platform where users can buy, sell, swap, and learn a
 ## Technologies Used
 
 - **Frontend**: HTML, CSS (Tailwind - planned), JavaScript (React - planned)
-- **Backend**: Node.js (planned), Python(hosted on render)
+- **Backend**: Node.js (planned), Python(hosted on rendergit rm -r --cached "vs code"
+  git)
 - **API Integration**: CoinGecko API for real-time prices
 
 ## License
